@@ -1,0 +1,77 @@
+# =============================================================================
+# PromptWars .gitignore
+# - Credentials are IGNORED (never exposed)
+# - instructions/, airarise_guide.md, and stitch_airarise_air_intelligence_platform/
+#   are TRACKED (exposed / committed)
+# =============================================================================
+
+# --- Credentials & secrets (DO NOT expose / commit) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.crt
+*.secret
+credentials/
+secrets/
+config/secrets/
+
+# --- macOS system files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# --- Windows / Linux system files ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- IDEs / editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Dependencies ---
+node_modules/
+
+# --- Build / output ---
+dist/
+build/
+out/
+.next/
+*.local
+
+# --- Archives ---
+*.zip
+*.tar.gz
+*.rar
+
+# =============================================================================
+# TRACKED (exposed) — do NOT ignore these:
+#   instructions/          -> screenshots & project instructions
+#   airarise_guide.md      -> project guide
+#   stitch_airarise_air_intelligence_platform/ -> main project source
+# =============================================================================
+*instructions/
+*airarise_guide.md
+*stitch_airarise_air_intelligence_platform/
